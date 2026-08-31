@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Why Student Housing Wins | Sophie's Place</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy-950: #0a0e1f;
+      --navy-900: #0d1226;
+      --navy-700: #1c2547;
+      --ink: #e9ecf7;
+      --ink-dim: #aab1d1;
+      --ink-faint: #7b83a8;
+      --violet: #8b6cf0;
+      --blue: #4f8ef7;
+      --white: #ffffff;
+      --gradient: linear-gradient(90deg, var(--violet), var(--blue));
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--navy-950);
+      color: var(--ink);
+      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, .display {
+      font-family: 'Space Grotesk', 'Inter', ui-sans-serif, system-ui, sans-serif;
+      text-wrap: balance;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .page {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 48px 56px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 17.3px;
+      margin-bottom: 40px;
+    }
+
+    .brand-mark {
+      width: 56.9px;
+      height: 56.9px;
+      border-radius: 17.3px;
+      background: var(--navy-700);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06);
+      overflow: hidden;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .brand-text h1 {
+      font-size: 25.5px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    .brand-text h1 .accent {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .brand-text h1 .brand-suffix {
+      background: linear-gradient(90deg, #9aa1c2, #5c6389);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .brand-sub {
+      font-size: 13.6px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: #e8eaf3;
+      margin-top: 2px;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: minmax(300px, 1fr) minmax(320px, 1fr);
+      gap: 64px;
+      align-items: center;
+      min-height: 560px;
+    }
+
+    .bullet-side {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .bullet-side .kicker {
+      font-size: 13.6px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      color: #b9a6ff;
+      text-transform: uppercase;
+    }
+
+    .bullet-side h2 {
+      font-size: clamp(36px, 3.4vw, 52px);
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+    .bullet-side h2 .grad {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .bullet-side .icon-badge {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(139,108,240,0.55);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(139,108,240,0.08);
+    }
+
+    .bullet-side .icon-badge svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .para-side {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 40px 44px;
+      background: var(--navy-900);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+    }
+
+    .para-side .para-block strong {
+      display: block;
+      font-size: 17px;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .para-side .para-block p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--ink-dim);
+      margin: 0;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gradient);
+      color: var(--white);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 14px 26px;
+      border-radius: 999px;
+      white-space: nowrap;
+      align-self: flex-start;
+      box-shadow: 0 10px 28px rgba(107,90,240,0.35);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 32px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--ink-faint);
+    }
+
+    .back-link:hover {
+      color: var(--ink);
+    }
+
+    @media (max-width: 980px) {
+      .page { padding: 28px 20px 40px; }
+      .content { grid-template-columns: 1fr; gap: 32px; min-height: 0; }
+      .para-side { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="index.html" class="brand">
+      <div class="brand-mark"><img src="assets/rendering.jpg" alt="Sophie's Place"></div>
+      <div class="brand-text">
+        <h1>SOPHIE'S <span class="accent">PLACE</span> <span class="brand-suffix">&middot; 6736 LINDA VISTA</span></h1>
+        <div class="brand-sub">ENTITLED STUDENT HOUSING OPPORTUNITY &middot; SAN DIEGO</div>
+      </div>
+    </a>
+
+    <div class="content">
+      <div class="bullet-side">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="11" rx="2"/><path d="M7 8V6a2 2 0 012-2h6a2 2 0 012 2v2M3 12h18M10 12v3M14 12v3"/></svg></div>
+        <div class="kicker">The Investment Thesis</div>
+        <h2>Why Student<br><span class="grad">Housing Wins</span></h2>
+      </div>
+
+      <div class="para-side">
+        <div class="para-block"><strong>Parents pay the rent.</strong><p>Private university students are backed by high-income families &mdash; physicians, attorneys, business owners and international families. The people renting these units don't have to qualify; their parents already did.</p></div>
+        <div class="para-block"><strong>Cosign &amp; guarantee.</strong><p>Parents cosign and personally guarantee the leases. Collection risk is dramatically lower than conventional multifamily &mdash; the credit behind each lease is established and documented.</p></div>
+        <div class="para-block"><strong>Auto-debit, every month.</strong><p>Rental payments are auto-debited (ACH) straight from parents' accounts. No chasing rent, no vacancy concessions &mdash; predictable, automated income streams.</p></div>
+        <div class="para-block"><strong>The neighborhood mismatch.</strong><p>Most existing student housing near campus is aging apartments, single-family rentals, converted homes and outdated multifamily. Sophie's Place delivers what the market currently lacks: modern, secure, amenity-rich luxury student living.</p></div>
+        <a class="cta-button" href="contact.html">Request the Prospectus <span>&rarr;</span></a>
+      </div>
+    </div>
+
+    <a class="back-link" href="index.html">&larr; Back to Home</a>
+  </div>
+</body>
+</html>
