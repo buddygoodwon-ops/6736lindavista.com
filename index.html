@@ -70,7 +70,7 @@ img { max-width:100%; height:auto; }
   .tab-content { padding:20px 15px; }
   .gallery-grid { grid-template-columns:1fr; }
 }
-</style>
+.plans-grid img { cursor: zoom-in; transition: transform 0.15s ease; } .plans-grid img:hover { transform: scale(1.02); } .lightbox-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 9999; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; cursor: zoom-out; } .lightbox-overlay.active { display: flex; } .lightbox-overlay img { max-width: 95%; max-height: 95%; object-fit: contain; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); } .lightbox-close { position: absolute; top: 20px; right: 30px; color: #fff; font-size: 2.5em; font-weight: bold; cursor: pointer; line-height: 1; user-select: none; }</style>
 </head>
 <body>
 
@@ -279,22 +279,22 @@ img { max-width:100%; height:auto; }
 <p style="font-size:1.1em;color:#333;margin-bottom:20px;">Full architectural plan set &mdash; floor plans of the entire building, each individual unit type, and site plan. Available as high-resolution PDF copy.</p>
 
 <div class="plans-grid">
-<figure><img src="assets/plans/page_01.jpg" alt="Plan page 1"></figure>
-<figure><img src="assets/plans/page_02.jpg" alt="Plan page 2"></figure>
-<figure><img src="assets/plans/page_03.jpg" alt="Plan page 3"></figure>
-<figure><img src="assets/plans/page_04.jpg" alt="Plan page 4"></figure>
-<figure><img src="assets/plans/page_05.jpg" alt="Plan page 5"></figure>
-<figure><img src="assets/plans/page_06.jpg" alt="Plan page 6"></figure>
-<figure><img src="assets/plans/page_07.jpg" alt="Plan page 7"></figure>
-<figure><img src="assets/plans/page_08.jpg" alt="Plan page 8"></figure>
-<figure><img src="assets/plans/page_09.jpg" alt="Plan page 9"></figure>
-<figure><img src="assets/plans/page_10.jpg" alt="Plan page  ́10"></figure>
-<figure><img src="assets/plans/page_11.jpg" alt="Plan page  ́11"></figure>
-<figure><img src="assets/plans/page_12.jpg" alt="Plan page  ́12"></figure>
-<figure><img src="assets/plans/page_13.jpg" alt="Plan page  ́13"></figure>
-<figure><img src="assets/plans/page_14.jpg" alt="Plan page  ́14"></figure>
-<figure><img src="assets/plans/page_15.jpg" alt="Plan page  ́15"></figure>
-<figure><img src="assets/plans/page_16.jpg" alt="Plan page  ́16"></figure>
+<figure><img src="assets/plans/page_01.jpg" alt="Plan page 01" onclick="openLightbox('assets/plans/page_01.jpg','Plan page 01')"></figure>
+<figure><img src="assets/plans/page_02.jpg" alt="Plan page 02" onclick="openLightbox('assets/plans/page_02.jpg','Plan page 02')"></figure>
+<figure><img src="assets/plans/page_03.jpg" alt="Plan page 03" onclick="openLightbox('assets/plans/page_03.jpg','Plan page 03')"></figure>
+<figure><img src="assets/plans/page_04.jpg" alt="Plan page 04" onclick="openLightbox('assets/plans/page_04.jpg','Plan page 04')"></figure>
+<figure><img src="assets/plans/page_05.jpg" alt="Plan page 05" onclick="openLightbox('assets/plans/page_05.jpg','Plan page 05')"></figure>
+<figure><img src="assets/plans/page_06.jpg" alt="Plan page 06" onclick="openLightbox('assets/plans/page_06.jpg','Plan page 06')"></figure>
+<figure><img src="assets/plans/page_07.jpg" alt="Plan page 07" onclick="openLightbox('assets/plans/page_07.jpg','Plan page 07')"></figure>
+<figure><img src="assets/plans/page_08.jpg" alt="Plan page 08" onclick="openLightbox('assets/plans/page_08.jpg','Plan page 08')"></figure>
+<figure><img src="assets/plans/page_09.jpg" alt="Plan page 09" onclick="openLightbox('assets/plans/page_09.jpg','Plan page 09')"></figure>
+<figure><img src="assets/plans/page_10.jpg" alt="Plan page 10" onclick="openLightbox('assets/plans/page_10.jpg','Plan page 10')"></figure>
+<figure><img src="assets/plans/page_11.jpg" alt="Plan page 11" onclick="openLightbox('assets/plans/page_11.jpg','Plan page 11')"></figure>
+<figure><img src="assets/plans/page_12.jpg" alt="Plan page 12" onclick="openLightbox('assets/plans/page_12.jpg','Plan page 12')"></figure>
+<figure><img src="assets/plans/page_13.jpg" alt="Plan page 13" onclick="openLightbox('assets/plans/page_13.jpg','Plan page 13')"></figure>
+<figure><img src="assets/plans/page_14.jpg" alt="Plan page 14" onclick="openLightbox('assets/plans/page_14.jpg','Plan page 14')"></figure>
+<figure><img src="assets/plans/page_15.jpg" alt="Plan page 15" onclick="openLightbox('assets/plans/page_15.jpg','Plan page 15')"></figure>
+<figure><img src="assets/plans/page_16.jpg" alt="Plan page 16" onclick="openLightbox('assets/plans/page_16.jpg','Plan page 16')"></figure>
 </div>
 
 <p style="margin-top:25px;"><a class="btn-dark" href="assets/Sophies-Place-Mini-Plan-Set.pdf" target="_blank">&#128229; Download Full Plan Set (PDF)</a></p>
@@ -314,7 +314,7 @@ img { max-width:100%; height:auto; }
 
 <div style="background:#f8f9fa;padding:30px;border-radius:8px;border:2px solid #000;margin-bottom:30px;">
 <h3 style="color:#000;font-size:1.6em;margin-top:0;">Entitled &amp; ready to move</h3>
-<p style="font-size:1.2em;line-height:1.8;">Approved plans for <strong>56 large luxury residential units</strong>. Significant entitlement work is already complete &mdash; with a process in place to continue seamlessly through plan check, so developers can see exactly where the project stands and eliminate entitlement risk.</p>
+<p style="font-size:1.2em;line-height:1.8;">Architectural plans for <strong>56 large luxury residential units</strong>. Significant entitlement work is already complete &mdash; with a process in place to continue seamlessly through plan check, so developers can see exactly where the project stands and eliminate entitlement risk.</p>
 </div>
 
 <h3 style="color:#000;font-size:1.8em;">Build what the university cannot</h3>
@@ -384,5 +384,5 @@ window.addEventListener('load', function() {
   }
 });
 </script>
-</body>
+<div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox()"><span class="lightbox-close" onclick="closeLightbox()">&times;</span><img id="lightboxImg" src="" alt=""></div><script>function openLightbox(src, alt) { var overlay = document.getElementById('lightboxOverlay'); var img = document.getElementById('lightboxImg'); img.src = src; img.alt = alt; overlay.classList.add('active'); } function closeLightbox() { document.getElementById('lightboxOverlay').classList.remove('active'); } document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeLightbox(); });</script></body>
 </html>
